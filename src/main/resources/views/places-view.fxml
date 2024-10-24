@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+
+<VBox spacing="15" alignment="TOP_LEFT" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.PlacesController"
+      stylesheets="@../styles/places.css"
+      styleClass="places">
+
+    <HBox spacing="20" alignment="CENTER">
+        <VBox spacing="10">
+            <Label text="Hotels:" style="-fx-font-weight: bold; -fx-font-size: 18; "/>
+            <ListView fx:id="hotelsListView" prefWidth="200" prefHeight="150" />
+            <Label text="Malls:" style="-fx-font-weight: bold; -fx-font-size: 18;" />
+            <ListView fx:id="mallsListView" prefWidth="200" prefHeight="150" />
+        </VBox>
+
+        <VBox spacing="10">
+            <Label text="Restaurants:" style="-fx-font-weight: bold; -fx-font-size: 18;" />
+            <ListView fx:id="restaurantsListView" prefWidth="200" prefHeight="150" />
+            <Label text="Tourist Places:" style="-fx-font-weight: bold; -fx-font-size: 18;" />
+            <ListView fx:id="touristPlacesListView" prefWidth="200" prefHeight="150" />
+        </VBox>
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER">
+        <VBox spacing="10" alignment="CENTER_LEFT">
+            <Label fx:id="operatingHoursLabel" text="Operating Hours:" style="-fx-font-weight: bold; -fx-font-size: 18;" />
+            <TextArea fx:id="operatingHoursArea" prefHeight="80" prefWidth="300" editable="false" wrapText="true" styleClass="text-area" />
+        </VBox>
+
+        <VBox spacing="10" alignment="CENTER_LEFT">
+            <Label text="Transportation Methods:" style="-fx-font-weight: bold; -fx-font-size: 18;" />
+            <TextArea fx:id="transportationMethodsArea" prefHeight="80" prefWidth="300" editable="false" wrapText="true" styleClass="text-area" />
+        </VBox>
+    </HBox>
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="addToPlanner" text="Add To Planner" />
+        <Button fx:id="viewPlanner" text="View Planner" />
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button fx:id="backButton" text="Back" />
+    </HBox>
+</VBox>

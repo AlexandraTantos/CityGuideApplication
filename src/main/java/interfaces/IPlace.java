@@ -1,11 +1,10 @@
 package interfaces;
 
-import classes.Transportation;
-
-import java.util.List;
+import types.PlaceType;
 
 public interface IPlace {
     String getName();
-    List<Transportation> getTransportationMethods();
+    String getOperatingHours();
+    PlaceType getType();
 }
 

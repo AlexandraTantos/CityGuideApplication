@@ -10,6 +10,11 @@ module com.cityguideapp.cityguideapplication {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens com.cityguideapp.cityguideapplication to javafx.fxml;
-    exports com.cityguideapp.cityguideapplication;
+
+    exports controllers;
+    opens controllers to javafx.fxml;
+    exports models;
+    opens models to javafx.fxml;
+    exports application;
+    opens application to javafx.fxml;
 }
